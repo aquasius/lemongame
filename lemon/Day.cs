@@ -11,13 +11,15 @@ namespace lemon
         // member variables ( HAS A )
         public Weather weather;
         public List<Customer> customers;
-        public List<Day> days; // i am creating days 
+        public string dayName;
 
 
         // constructor
-        public Day()
+        public Day(string dayName)
         {
             weather = new Weather();
+            
+
         }
 
 

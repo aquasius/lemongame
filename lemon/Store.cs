@@ -13,21 +13,15 @@ namespace lemon
         private double pricePerSugarCube;
         private double pricePerIceCube;
         private double pricePerCup;
-
-
+        private double totalLemons;
+        private double lemonTotal;
+        private int itemTotal;
 
 
         // constructor
-
-
-
-
-        // member methods ( CAN DO )
-        public void SellItems()
+        public Store()
         {
-            // pricePerLemon = .;
-            pricePerSugarCube = .57;
-            pricePerIceCube = .87;
+
 
 
         }
@@ -35,7 +29,31 @@ namespace lemon
 
 
 
+        // member methods ( CAN DO )
+        public void ListItemsToSell()
+        {
+            pricePerLemon = .12;
+            pricePerSugarCube = .10;
+            pricePerIceCube = .05;
+            pricePerCup = .08;
 
+        }
+
+        public void AmountOfProduct()
+        {
+            Console.WriteLine("How many lemons would you like to purchase? They are" + pricePerLemon + " each");
+            totalLemons = Convert.ToInt32(Console.ReadLine());
+            itemMath();
+        }
+
+        public void itemMath(int total, int amount, int price)
+        {
+            total = amount * price;
+            Console.WriteLine("You purchased" + total + " at" + pricePerLemon + " each");
+            Console.ReadLine();
+        }
+
+        public void sellProduct
 
 
 

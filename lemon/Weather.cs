@@ -20,7 +20,7 @@ namespace lemon
         // constructor
         public Weather()
         {
-            weatherConditions = new List<string>() { "rainy", "sunny", "cloudy", "snowy", "scorching hot" };
+            weatherConditions = new List<string>() { "rainy", "sunny", "cloudy", "snowy", "scorching hot", "windy", "cloudy" };
 
             rand = new Random();
             weatherCount = weatherConditions.Count;

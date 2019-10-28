@@ -21,7 +21,7 @@ namespace lemon
         // member methods ( CAN DO )
         public void HoldMoney()
         {
-
+            Money = 20;
         }
 
 
