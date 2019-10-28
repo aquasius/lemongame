@@ -55,8 +55,10 @@ namespace lemon
         {
             DisplayRules();
             askName();
-            
-            
+
+            Store store = new Store();
+            store.AmountOfLemons();
+            string = 
             
             
             

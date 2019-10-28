@@ -15,7 +15,6 @@ namespace lemon
         private double pricePerCup;
         private double totalLemons;
         private double lemonTotal;
-        private int itemTotal;
 
 
         // constructor
@@ -39,21 +38,20 @@ namespace lemon
 
         }
 
-        public void AmountOfProduct()
+        public void AmountOfLemons()
         {
             Console.WriteLine("How many lemons would you like to purchase? They are" + pricePerLemon + " each");
             totalLemons = Convert.ToInt32(Console.ReadLine());
-            itemMath();
+            LemonMath();
         }
 
-        public void itemMath(int total, int amount, int price)
+        public void LemonMath()
         {
-            total = amount * price;
-            Console.WriteLine("You purchased" + total + " at" + pricePerLemon + " each");
-            Console.ReadLine();
+            lemonTotal = totalLemons * pricePerLemon;
+            Console.WriteLine("You purchased" + totalLemons + " at" + pricePerLemon);
+            Console.ReadLine()
         }
 
-        public void sellProduct
 
 
 
