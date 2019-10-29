@@ -9,7 +9,7 @@ namespace lemon
     class Wallet
     {
         // member variables ( HAS A )
-        private double money;
+        public double walletAmount;
         public double Money;
 
 
@@ -21,7 +21,7 @@ namespace lemon
         // member methods ( CAN DO )
         public void HoldMoney()
         {
-            Money = 20;
+            walletAmount = 20;
         }
 
 

@@ -9,9 +9,9 @@ namespace lemon
     class Recipe
     {
         // member variables ( HAS A )
-        public int amountOfLemons;
-        public int amountOfSugarCubes;
-        public int amountOfICeCubes;
+        public int numberOfLemons;
+        public int numberOfSugarCubes;
+        public int numberOfICeCubes;
         public double pricePerCup;
 
 

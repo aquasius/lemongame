@@ -10,8 +10,8 @@ namespace lemon
     {
         static void Main(string[] args)
         {
-            Day day = new Day();
-            day.DetermineWeather();
+            Game game = new Game();
+            game.RunGame();
         }
     }
 }

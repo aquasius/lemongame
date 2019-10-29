@@ -17,7 +17,11 @@ namespace lemon
 
 
         // constructor
-
+        public Player()
+        {
+            wallet = new Wallet();
+            inventory = new Inventory();
+        }
 
 
 

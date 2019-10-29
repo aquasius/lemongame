@@ -18,6 +18,7 @@ namespace lemon
         // constructor
         public Game()
         {
+            
             days = new List<Day>();
             Day sunday = new Day("Sunday");
             days.Add(sunday);
@@ -58,11 +59,14 @@ namespace lemon
 
             Store store = new Store();
             store.AmountOfLemons();
-            string = 
+            store.AmountOfSugar();
+            store.AmountOfIce();
+            store.AmountOfIce();
+            Console.ReadLine();
             
             
             
-            DisplayWeather();
+            
         }
 
 
