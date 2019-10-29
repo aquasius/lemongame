@@ -41,7 +41,13 @@ namespace lemon
             totalLemons = Convert.ToInt32(Console.ReadLine());
             lemonTotal = LemonMath(totalLemons);
             player.wallet.walletAmount = player.wallet.walletAmount - lemonTotal;
+            Console.WriteLine(player.wallet.walletAmount + " dollars left");
+
+            AddLemons(totalLemons, lemonTotal, player);
+
         }
+
+
         public void AmountOfSugar(Player player)
         {
             int totalSugar; 
@@ -52,8 +58,7 @@ namespace lemon
            sugarTotal = SugarMath(totalSugar);
            player.wallet.walletAmount = player.wallet.walletAmount - sugarTotal;
             
-            Console.WriteLine("Your "+ player.inventory
-                )
+            //Console.WriteLine("Your "+ player.inventory )
         }
 
         public void  AmountOfIce(Player player)
@@ -65,7 +70,7 @@ namespace lemon
             totalIce = Convert.ToInt32(Console.ReadLine());
             iceTotal = IceMath(totalIce);
             player.wallet.walletAmount = player.wallet.walletAmount - iceTotal;
-            Console.WriteLine("You have" + player.wallet.walletAmount)
+            Console.WriteLine("You have" + player.wallet.walletAmount);
         }
 
         public void AmountOfCups(Player player)
@@ -77,6 +82,7 @@ namespace lemon
             totalCups = Convert.ToInt32(Console.ReadLine());
             cupTotal = CupMath(totalCups);
             player.wallet.walletAmount = player.wallet.walletAmount - cupTotal;
+
         }
 
         public double LemonMath(int totalLemons)
@@ -106,7 +112,15 @@ namespace lemon
             return cupTotal;
         }
 
-
+        public void AddLemons(double totalLemons, double lemonTotal, Player player)
+        {
+            for (int i = 0; i < totalLemons; i++)
+            {
+                Lemon lemon = new Lemon();
+                player.inventory.lemons.Add(lemon);
+            }
+            Console.WriteLine("You now have " + lemonTotal + " lemons in you inventory");
+        }
 
 
 
