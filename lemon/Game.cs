@@ -19,33 +19,33 @@ namespace lemon
         public Game()
         {
             
-            days = new List<Day>();
-            Day sunday = new Day("Sunday");
-            days.Add(sunday);
+            //days = new List<Day>();
+            //Day sunday = new Day("Sunday");
+            //days.Add(sunday);
 
-            days = new List<Day>();
-            Day monday = new Day("Monday");
-            days.Add(monday);
+            //days = new List<Day>();
+            //Day monday = new Day("Monday");
+            //days.Add(monday);
 
-            days = new List<Day>();
-            Day tuesday = new Day("Tuesday");
-            days.Add(tuesday);
+            //days = new List<Day>();
+            //Day tuesday = new Day("Tuesday");
+            //days.Add(tuesday);
 
-            days = new List<Day>();
-            Day wednesday = new Day("Wednesday");
-            days.Add(wednesday);
+            //days = new List<Day>();
+            //Day wednesday = new Day("Wednesday");
+            //days.Add(wednesday);
 
-            days = new List<Day>();
-            Day thursday = new Day("Thursday");
-            days.Add(thursday);
+            //days = new List<Day>();
+            //Day thursday = new Day("Thursday");
+            //days.Add(thursday);
 
-            days = new List<Day>();
-            Day friday = new Day("Friday");
-            days.Add(friday);
+            //days = new List<Day>();
+            //Day friday = new Day("Friday");
+            //days.Add(friday);
 
-            days = new List<Day>();
-            Day saturday = new Day("Saturday");
-            days.Add(saturday);
+            //days = new List<Day>();
+            //Day saturday = new Day("Saturday");
+            //days.Add(saturday)
 
 
         }
@@ -55,13 +55,14 @@ namespace lemon
         public void RunGame()
         {
             DisplayRules();
+            Player player = new Player();
             askName();
 
             Store store = new Store();
-            store.AmountOfLemons();
-            store.AmountOfSugar();
-            store.AmountOfIce();
-            store.AmountOfIce();
+            store.AmountOfLemons(player);
+            store.AmountOfSugar(player);
+            store.AmountOfIce(player);
+            store.AmountOfCups(player);
             Console.ReadLine();
             
             

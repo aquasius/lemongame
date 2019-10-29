@@ -14,15 +14,16 @@ namespace lemon
 
 
         // constructor
+    public Wallet()
+        {
+            walletAmount = 20;
 
+        }
 
 
 
         // member methods ( CAN DO )
-        public void HoldMoney()
-        {
-            walletAmount = 20;
-        }
+        
 
 
 

@@ -18,7 +18,15 @@ namespace lemon
 
         // constructor
 
+    public Inventory()
+        {
+            lemons = new List<Lemon>();
+            iceCubes = new List<IceCube>();
+            cups = new List<Cup>();
+            sugarCubes = new List<SugarCube>();
 
+
+        }
 
 
         // member methods ( CAN DO )
