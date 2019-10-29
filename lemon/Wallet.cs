@@ -9,15 +9,15 @@ namespace lemon
     class Wallet
     {
         // member variables ( HAS A )
-        public double walletAmount;
-        public double Money;
+        private double walletAmount;
+        public double WalletAmount;
 
 
         // constructor
     public Wallet()
         {
             walletAmount = 20;
-
+            WalletAmount = 20; 
         }
 
 

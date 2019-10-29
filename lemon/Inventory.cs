@@ -31,9 +31,35 @@ namespace lemon
 
         // member methods ( CAN DO )
 
+        public void displayInventory()
+        {
+            Console.WriteLine("Lemons: " + lemons.Count);
+            Console.WriteLine("Ice Cubes: " + iceCubes.Count);
+            Console.WriteLine("Cups: " + cups.Count);
+            Console.WriteLine("Sugar: " + sugarCubes.Count);
+        }
+
         public void DisplayItems()
         {
+            if (lemons.Count != 0)
+            {
+                Console.WriteLine("Lemons: " + lemons.Count);
+            }
 
+            if (lemons.Count != 0)
+            {
+                Console.WriteLine("Sugar: " + sugarCubes.Count);
+            }
+
+            if (lemons.Count != 0)
+            {
+                Console.WriteLine("Ice:" + iceCubes.Count);
+            }
+
+            if (lemons.Count != 0)
+            {
+                Console.WriteLine("Cups: " + cups.Count);
+            }
         }
 
 
