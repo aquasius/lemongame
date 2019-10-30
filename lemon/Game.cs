@@ -19,33 +19,30 @@ namespace lemon
         public Game()
         {
             
-            //days = new List<Day>();
-            //Day sunday = new Day("Sunday");
-            //days.Add(sunday);
+            days = new List<Day>();
+            Day sunday = new Day("Sunday");
+            days.Add(sunday);
 
-            //days = new List<Day>();
-            //Day monday = new Day("Monday");
-            //days.Add(monday);
+            
+            Day monday = new Day("Monday");
+            days.Add(monday);
 
-            //days = new List<Day>();
-            //Day tuesday = new Day("Tuesday");
-            //days.Add(tuesday);
+            
+            Day tuesday = new Day("Tuesday");
+            days.Add(tuesday);
 
-            //days = new List<Day>();
-            //Day wednesday = new Day("Wednesday");
-            //days.Add(wednesday);
+           
+            Day wednesday = new Day("Wednesday");
+            days.Add(wednesday);
 
-            //days = new List<Day>();
-            //Day thursday = new Day("Thursday");
-            //days.Add(thursday);
+            Day thursday = new Day("Thursday");
+            days.Add(thursday);
 
-            //days = new List<Day>();
-            //Day friday = new Day("Friday");
-            //days.Add(friday);
+           Day friday = new Day("Friday");
+            days.Add(friday);
 
-            //days = new List<Day>();
-            //Day saturday = new Day("Saturday");
-            //days.Add(saturday)
+           Day saturday = new Day("Saturday");
+            days.Add(saturday);
 
 
         }
@@ -57,20 +54,25 @@ namespace lemon
             DisplayRules();
             Player player = new Player();
             askName();
+           
+            Console.WriteLine()
 
             Store store = new Store();
             store.AmountOfLemons(player);
             store.AmountOfSugar(player);
             store.AmountOfIce(player);
             store.AmountOfCups(player);
-            Console.ReadLine();
 
-            
-            
+            Console.WriteLine("Now it's time to create your recipe!");
+             player.recipe.recipeCreator(player.inventory);
+             player.UpdatedInventory();
+             Console.ReadLine();
 
-            
-            player.recipe.recipeCreator(player.inventory);
+            Console.WriteLine("You will now begin your first day. The weather is:");
 
+            Weather weather = new Weather();
+            weather.CreateWeatherConditions();
+            weather.CreateTemperature();
             
             
             

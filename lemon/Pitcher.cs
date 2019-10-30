@@ -15,14 +15,23 @@ namespace lemon
 
 
         // constructor
+        public Pitcher()
+        {
+            cupsLeftInPitcher = 7;
+        }
 
 
-            
 
         // member methods ( CAN DO )
         public void HoldCupsOfLemonade()
         {
-            cupsInPitcher = ;
+            // 7 cups per pitcher
+           // once you sold 7 cups, the pitcher refills with the recipe standard recipe the user provided until 
+           //if (cupsLeftInPitcher = 0)
+            {
+               // refillPitcher();
+            }
+            
 
 
 

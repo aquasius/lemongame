@@ -69,10 +69,7 @@ namespace lemon
                 Console.WriteLine(numberOfIceCubes + " ice cubes are now chilling inside your pitcher");
             }
 
-            Console.WriteLine("\n Lemons: " + inventory.lemons.Count);
-            Console.WriteLine("\n Sugar: " + inventory.sugarCubes.Count);
-            Console.WriteLine("\n Ice: " + inventory.iceCubes.Count);
-            Console.WriteLine("\n Cups: " + inventory.cups.Count);
+            
 
 
         }

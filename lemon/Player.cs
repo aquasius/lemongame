@@ -15,6 +15,9 @@ namespace lemon
         public Recipe recipe;
         public Pitcher pitcher;
         public int newLemonTotal;
+        public int newSugarTotal;
+        public int newIceTotal;
+        public int pitcherCanHold;
 
        
 
@@ -26,7 +29,7 @@ namespace lemon
             recipe = new Recipe();
         }
 
-
+       
 
         // member methods ( CAN DO )
         public void BuyItems()
@@ -62,12 +65,30 @@ namespace lemon
         {
 
             newLemonTotal = inventory.lemons.Count - recipe.numberOfLemons;
+            Console.WriteLine("you have " + newLemonTotal + "  lemons remaining");
 
-            Console.WriteLine(newLemonTotal + " you have lemons remaining");
+            newSugarTotal = inventory.sugarCubes.Count - recipe.numberOfSugarCubes;
+            Console.WriteLine("you have " + newSugarTotal + " sugar cubes ramaining");
+
+            newIceTotal = inventory.iceCubes.Count - recipe.numberOfIceCubes;
+            Console.WriteLine("you have " + newIceTotal + " ice cubes remaining");
 
 
         }
-    
+        
+        public void refillPitcher()
+        {
+            
+           // if (pitcher.cupsLeftInPitcher <= pitcher.cupsInPitcher)
+            {
+               // pitcherCanHold = cupsLeftInPitcher - cupsInPitcher;
+            }
+       
+        
+        
+        }
+
+
     
     }
 }

@@ -130,7 +130,7 @@ namespace lemon
                 player.inventory.lemons.Add(lemon);
                 
             }
-            player.inventory.displayInventory();
+           // player.inventory.displayInventory();
 
         }
 
@@ -142,7 +142,7 @@ namespace lemon
                 player.inventory.sugarCubes.Add(sugarcube);
                 
             }
-            player.inventory.displayInventory();
+           // player.inventory.displayInventory();
 
         }
 
@@ -155,7 +155,7 @@ namespace lemon
                
 
             }
-            player.inventory.displayInventory();
+            //player.inventory.displayInventory();
         }
 
         public void AddCupsToInv(double totalCups, double cupTotal, Player player)
@@ -166,7 +166,7 @@ namespace lemon
                 player.inventory.cups.Add(cup);
                 
             }
-            player.inventory.displayInventory();
+            //player.inventory.displayInventory();
         }
     
          
