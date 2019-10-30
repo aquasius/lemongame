@@ -33,6 +33,7 @@ namespace lemon
 
         public void displayInventory()
         {
+            Console.WriteLine("You now have");
             Console.WriteLine("Lemons: " + lemons.Count);
             Console.WriteLine("Ice Cubes: " + iceCubes.Count);
             Console.WriteLine("Cups: " + cups.Count);
@@ -46,17 +47,17 @@ namespace lemon
                 Console.WriteLine("Lemons: " + lemons.Count);
             }
 
-            if (lemons.Count != 0)
+            if (sugarCubes.Count != 0)
             {
                 Console.WriteLine("Sugar: " + sugarCubes.Count);
             }
 
-            if (lemons.Count != 0)
+            if (iceCubes.Count != 0)
             {
                 Console.WriteLine("Ice:" + iceCubes.Count);
             }
 
-            if (lemons.Count != 0)
+            if (cups.Count != 0)
             {
                 Console.WriteLine("Cups: " + cups.Count);
             }

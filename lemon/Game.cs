@@ -65,8 +65,12 @@ namespace lemon
             store.AmountOfCups(player);
             Console.ReadLine();
 
-            Inventory inventory = new Inventory();
-            inventory.displayInventory();
+            
+            player.inventory.displayInventory();
+            Console.ReadLine();
+
+            
+            player.recipe.recipeCreator(player.inventory);
 
             
             

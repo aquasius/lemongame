@@ -76,6 +76,8 @@ namespace lemon
             iceTotal = IceMath(totalIce);
             player.wallet.WalletAmount = player.wallet.WalletAmount - iceTotal;
             Console.WriteLine("You have " + player.wallet.WalletAmount + " dollars left");
+
+            AddIceToInv(totalIce, iceTotal, player);
         }
 
         public void AmountOfCups(Player player)
@@ -88,6 +90,8 @@ namespace lemon
             cupTotal = CupMath(totalCups);
             player.wallet.WalletAmount = player.wallet.WalletAmount - cupTotal;
             Console.WriteLine("You have " + player.wallet.WalletAmount + " dollars left");
+
+            AddCupsToInv(totalCups, cupTotal, player);
 
         }
 

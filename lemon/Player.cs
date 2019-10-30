@@ -14,13 +14,14 @@ namespace lemon
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
-
+       
 
         // constructor
         public Player()
         {
             wallet = new Wallet();
             inventory = new Inventory();
+            recipe = new Recipe();
         }
 
 
