@@ -10,17 +10,19 @@ namespace lemon
     {
         // member variables ( HAS A )
         public int cupsLeftInPitcher;
+        public int cupsInPitcher;
 
 
 
         // constructor
 
 
-
+            
 
         // member methods ( CAN DO )
         public void HoldCupsOfLemonade()
         {
+            cupsInPitcher = ;
 
 
 

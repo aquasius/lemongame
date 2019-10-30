@@ -66,8 +66,7 @@ namespace lemon
             Console.ReadLine();
 
             
-            player.inventory.displayInventory();
-            Console.ReadLine();
+            
 
             
             player.recipe.recipeCreator(player.inventory);

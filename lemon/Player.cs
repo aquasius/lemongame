@@ -14,6 +14,8 @@ namespace lemon
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
+        public int newLemonTotal;
+
        
 
         // constructor
@@ -53,10 +55,18 @@ namespace lemon
 
         public void CreateLemonadeRecipe()
         {
-
+            
         }
     
-    
+        public void UpdatedInventory()
+        {
+
+            newLemonTotal = inventory.lemons.Count - recipe.numberOfLemons;
+
+            Console.WriteLine(newLemonTotal + " you have lemons remaining");
+
+
+        }
     
     
     }
