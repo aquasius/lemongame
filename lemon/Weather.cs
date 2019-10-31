@@ -8,42 +8,52 @@ namespace lemon
 {
     class Weather
     {
-        Day day;
+
         // member variables ( HAS A )
-        public string condition;
+        Day day;
         public int temperature;
-        private List<string> weatherConditions;
-        public int weatherCount;
-        private Random rand;
-        public string weather;
+        public string[] weatherConditions;
+        public string condition;
+        Random random;
+
+
 
 
         // constructor
-        public Weather()
+        public Weather(Random random)
         {
-
-            weatherConditions = new List<string>() { "rainy", "sunny", "cloudy", "snowy", "scorching hot", "windy", "cloudy" };
-            
-            rand = new Random();
-            weatherCount = weatherConditions.Count;
-            day.CreateWeatherConditions();
-            day.CreateTemperature();
+            this.random = random;
         }
 
-        
 
 
         // member methods ( CAN DO )
-        
+          public string CreateConditions()
+          {
+                weatherConditions = new string[5];
+                weatherConditions[0] = "Sunny";
+                weatherConditions[1] = "Rainy";
+                weatherConditions[2] = "Windy";
+                weatherConditions[3] = "Scorching Hot";
+                weatherConditions[4] = "Cloudy";
+                int chooseConditions = random.Next(weatherConditions.Length);
+                condition = weatherConditions[chooseConditions];
+                return condition;
+          }
+
+            public int CreateTemperature()
+            {
+                temperature = random.Next(60, 95);
+                return temperature;
+
+            }
 
         
-        
-        
-        
 
 
 
 
 
-    }
+
+      }
 }
