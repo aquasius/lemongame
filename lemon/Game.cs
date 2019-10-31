@@ -9,6 +9,7 @@ namespace lemon
     class Game
     {
         // member variables ( HAS A )
+        Day day;
         private Player player;
         private List<Day> days;
         private int currentDay;
@@ -54,8 +55,8 @@ namespace lemon
             DisplayRules();
             Player player = new Player();
             askName();
-           
-            Console.WriteLine()
+
+            Console.WriteLine();
 
             Store store = new Store();
             store.AmountOfLemons(player);
@@ -71,9 +72,9 @@ namespace lemon
             Console.WriteLine("You will now begin your first day. The weather is:");
 
             Weather weather = new Weather();
-            weather.CreateWeatherConditions();
-            weather.CreateTemperature();
-            
+            day.CreateWeatherConditions();
+            day.CreateTemperature();
+            Console.ReadLine();
             
             
             

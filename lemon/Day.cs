@@ -13,9 +13,9 @@ namespace lemon
         public List<Customer> customers;
         public string dayName;
         public int numberOfDays;
-        public List<Day>days;
+        public List<Day> days;
         private Random rand;
-        
+
         public int weatherCount;
         private List<string> weatherConditions;
         public string weather;
@@ -24,11 +24,11 @@ namespace lemon
         // constructor
         public Day(string dayName)
         {
-           
-            
+
+
 
         }
-        
+
 
 
 
@@ -46,21 +46,22 @@ namespace lemon
 
         public void DetermineWeather()
         {
-            
-            
+
+
 
         }
 
-        //public void toDay()
-        //{
-        //    numberOfDays = 7;
+        public void toDay()
+        {
+            numberOfDays = 7;
 
-        //    for (int i = 0; i < numberOfDays; i++)
-        //    {
-        //        Day day = new Day;
+            for (int i = 0; i < numberOfDays; i++)
+            {
+               Day day = new Day;
+               days.Add(days);
 
-        //    }
-        //}
+            }
+        }
 
         public void CreateWeatherConditions()
         {
@@ -107,4 +108,5 @@ namespace lemon
 
 
         }
+    }
 }
